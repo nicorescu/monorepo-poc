@@ -1,0 +1,26 @@
+{
+  "name": "mylib18",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/mylib18/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/mylib18",
+        "main": "libs/mylib18/src/index.ts",
+        "tsConfig": "libs/mylib18/tsconfig.lib.json",
+        "assets": ["libs/mylib18/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/mylib18/jest.config.ts"
+      }
+    }
+  }
+}

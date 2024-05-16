@@ -14,7 +14,32 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-monorepo/documents": ["libs/documents/src/index.ts"],
+      "@angular-monorepo/documents/data-access": [
+        "libs/documents/data-access/src/index.ts"
+      ],
+      "@angular-monorepo/documents/documents-data-access": [
+        "libs/documents/documents-data-access/src/index.ts"
+      ],
+      "@angular-monorepo/documents/documents-feature": [
+        "libs/documents/documents-feature/src/index.ts"
+      ],
+      "@angular-monorepo/documents/feature": [
+        "libs/documents/feature/src/index.ts"
+      ],
+      "@angular-monorepo/lib1": ["lib1/src/index.ts"],
+      "@angular-monorepo/my-plugin": ["libs/my-plugin/src/index.ts"],
+      "@angular-monorepo/mylib17": ["libs/mylib17/src/index.ts"],
+      "@angular-monorepo/mylib18": ["libs/mylib18/src/index.ts"],
+      "@angular-monorepo/products/data-access": [
+        "libs/products/data-access/src/index.ts"
+      ],
+      "@angular-monorepo/products/feature": [
+        "libs/products/feature/src/index.ts"
+      ],
+      "mylib16/*": ["libs/mylib16/src/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

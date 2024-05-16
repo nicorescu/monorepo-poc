@@ -1,0 +1,8 @@
+{
+  "name": "mylib13",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/mylib13/src",
+  "// targets": "to see all targets run: nx show project mylib13 --web",
+  "targets": {}
+}
